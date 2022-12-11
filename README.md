@@ -43,7 +43,7 @@ En esta investigación se realizó un recopilación bibliográfica de ensayos de
  ### Documentación script ##
  La carpeta **Documentación** contiene un manual que explica el funcionamiento del script `Analisis_Data_Experimental.m` y de como utilizar este scrip para realizar el análisis de la data experimental. 
  En particular dentro de la carpeta se encuentran los siguientes archivos
- - Manual_Script.pdf: Archivo PDF con el manula
+ - Manual_Script.pdf: Archivo PDF con el manual.
  - **Docs**: Carpeta con los archivos necesarios para compilar en Latex el manual
-    - `Manual_Script.tex` : Archivo .tex con el *main* a compilar 
-    - **Figuras** : Carpeta con la figuras utilizada en el manual
+    - `Manual_Script.tex` : Archivo .tex con el *main* a compilar.
+    - **Figuras** : Carpeta con la figuras utilizada en el manual.
