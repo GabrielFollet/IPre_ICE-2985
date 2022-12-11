@@ -907,21 +907,3 @@ GraficarCiclos(DataProcesada)
 Resultados(DataProcesada)
 % Eliminando variables intermedias
 clearvars -except DataProcesada
-
-
-
-% GraficarHysteresis(Dazio_WSH6   ,1)
-
-%Bugs actuales
-    % En ensayos de daño previo, compuestos exclusivamente por multiples
-    % ciclo a una deformación,(Colmenares), como el comportmiento es
-    % esencialemnte elástico, se ajusta una bilineal, donde el tramo
-    % elastico corresponde exclusivamente a los primeros dos puntos y el
-    % tramos de rigidización post fluencia  corresponde a al tramo
-    % elasticos verdadero
-     
-
-
- 
-
-
