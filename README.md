@@ -1,8 +1,8 @@
 # IPre_ICE-2985
- ICE 2985 - "Análisis del comportamiento cíclico de muros de hormigón armado"
+## ICE 2985 - "Análisis del comportamiento cíclico de muros de hormigón armado"
 Este repositorio contiene los resultados de la investigación de pregrado realizada en 2022-2 en el marco del programa Investigación en Pregrado (IPRe) de la Escuela de Ingeniería de la Pontificia Universidad Católica de Chile. La investigación se convalidará como el ramo "ICE 2985 Investigación o Proyecto" del Departamento de Ingeniería Estructural y Geotécnica.
 
-A continuación se presenta una breve descripción del la oportunidad de investigación.
+### A continuación se presenta una breve descripción del la oportunidad de investigación.
 ID:  	          2742
 Nombre:         Análisis del comportamiento cíclico de muros de hormigón armado
 Descripción:    Esta oportunidad consiste en determinar parámetros del comportamiento sísmico cíclico de muros de hormigón armado. Los parámetros se determinarán de                   resultados de ensayos experimentales existentes en la literatura.
@@ -12,9 +12,9 @@ Mentor:         Profesor Matias Hube
 La investigación se realizó bajo la supervisión del Profesor Matias Hube y de PHd(c) Edgar Chacon.
 En esta investigación se realizó un recopilación bibliográfica de ensayos de muros de hormigón armado no confinado , se desarrollaron rutinas en Matlab para analizar el comportamiento de estos. Posteriormente, se realizó un análisis estadístico de los parámetros de daño calculados.
 
-Los archivos en este repositorio son: 
+### Los archivos en este repositorio son: 
 
- Códigos de Matlab
+#### Códigos de Matlab
  
  - Analisis_Data_Experimental.m : Script principal que detecta el protocolo de carga del ensayo y calcula la pérdida de fuerza, rígidez y energía disipada en cada                                       ciclo para la data experimental cargada. Tiene como output un struct
  - GraficarCiclos.m             : Función que a partir del struct calculado en "Analisis_Data_Experimental.m" grafica el protocolo de carga (supone que es a                                             deformación controlada) en términos de la deriva.
