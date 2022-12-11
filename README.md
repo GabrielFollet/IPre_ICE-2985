@@ -6,7 +6,7 @@ Gabriel Follet  <gabriel.follet@uc.cl>
 
 Este repositorio contiene los resultados de la investigación de pregrado realizada en 2022-2 en el marco del programa Investigación en Pregrado (IPre) de la Escuela de Ingeniería de la Pontificia Universidad Católica de Chile. La investigación se convalidará como el ramo "ICE 2985 Investigación o Proyecto" del Departamento de Ingeniería Estructural y Geotécnica.
 
-### A continuación se presenta una breve descripción del la oportunidad de investigación.
+### Oportunidad de investigación###
 
 - ID:  	          2742
 - Nombre:         Análisis del comportamiento cíclico de muros de hormigón armado
