@@ -14,7 +14,7 @@ Este repositorio contiene los resultados de la investigación de pregrado realiz
 - Mentor:         Profesor Matias Hube
 
 
-La investigación se realizó bajo la supervisión del Profesor Matias Hube y de PHd(c) Edgar Chacon.
+La investigación se realizó bajo la supervisión del Profesor Matias Hube y de Phd(c) Edgar Chacon.
 En esta investigación se realizó un recopilación bibliográfica de ensayos de muros de hormigón armado no confinado , se desarrollaron rutinas en Matlab para analizar el comportamiento de estos. Posteriormente, se realizó un análisis estadístico de los parámetros de daño calculados.
 
 ## Contenido Repositorio
