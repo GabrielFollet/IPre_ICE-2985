@@ -17,9 +17,9 @@ Este repositorio contiene los resultados de la investigación de pregrado realiz
 La investigación se realizó bajo la supervisión del Profesor Matias Hube y de PHd(c) Edgar Chacon.
 En esta investigación se realizó un recopilación bibliográfica de ensayos de muros de hormigón armado no confinado , se desarrollaron rutinas en Matlab para analizar el comportamiento de estos. Posteriormente, se realizó un análisis estadístico de los parámetros de daño calculados.
 
-### Contenido Repositorio
+## Contenido Repositorio
 
-#### Códigos de Matlab
+### Códigos de Matlab
  
  - `Analisis_Data_Experimental.m` : Script principal que detecta el protocolo de carga del ensayo y calcula la pérdida de fuerza, rígidez y energía disipada en cada                                       ciclo para la data experimental cargada. Tiene como output un struct
  - `GraficarCiclos.m`             : Función que a partir del struct calculado en `Analisis_Data_Experimental.m` grafica el protocolo de carga (supone que es a                                             deformación controlada) en términos de la deriva.
