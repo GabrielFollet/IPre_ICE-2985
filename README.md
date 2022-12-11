@@ -6,7 +6,7 @@ Gabriel Follet  <gabriel.follet@uc.cl>
 
 Este repositorio contiene los resultados de la investigación de pregrado realizada en 2022-2 en el marco del programa Investigación en Pregrado (IPre) de la Escuela de Ingeniería de la Pontificia Universidad Católica de Chile. La investigación se convalidará como el ramo "ICE 2985 Investigación o Proyecto" del Departamento de Ingeniería Estructural y Geotécnica.
 
-### Oportunidad de investigación###
+### Oportunidad de investigación 
 
 - ID:  	          2742
 - Nombre:         Análisis del comportamiento cíclico de muros de hormigón armado
@@ -17,7 +17,7 @@ Este repositorio contiene los resultados de la investigación de pregrado realiz
 La investigación se realizó bajo la supervisión del Profesor Matias Hube y de PHd(c) Edgar Chacon.
 En esta investigación se realizó un recopilación bibliográfica de ensayos de muros de hormigón armado no confinado , se desarrollaron rutinas en Matlab para analizar el comportamiento de estos. Posteriormente, se realizó un análisis estadístico de los parámetros de daño calculados.
 
-### Los archivos en este repositorio son: 
+### Contenido Repositorio
 
 #### Códigos de Matlab
  
