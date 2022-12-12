@@ -41,7 +41,7 @@ En esta investigación se realizó un recopilación bibliográfica de ensayos de
  La carpeta **Data Procesada** contiene un struct con la data procesada con el scrip `Analisis_Data_Experimental.m` de cada ensayo.
  
  ### Documentación script ##
- La carpeta **Documentación** contiene un manual que explica el funcionamiento del script `Analisis_Data_Experimental.m` y de como utilizar este scrip para realizar el análisis de la data experimental. 
+ La carpeta **Documentación** contiene un manual que explica el funcionamiento del script `Analisis_Data_Experimental.m` y de como utilizar este script para realizar el análisis de la data experimental. 
  En particular dentro de la carpeta se encuentran los siguientes archivos
  - Manual_Script.pdf: Archivo PDF con el manual.
  - `main.tex` : Archivo .tex con el codigo que produce el archivo PDF.
