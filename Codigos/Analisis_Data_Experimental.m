@@ -1,10 +1,10 @@
-   %%                   Codigo procesamiento data muros RC Carga Ciclica    
-%{Este  scrip tiene como objetivo realizar un carcterización inicial  de comportamiento de un muro bajo cargascíclicas.%}
+      %%                   Codigo procesamiento data muros RC Carga Ciclica    
+% Este  scrip tiene como objetivo realizar un carcterización inicial  de comportamiento de un muro bajo cargascíclicas. %
 %% Carga Data experimental
-RawData=load("Data Experimental\Moscoso\Moscoso_RW1.txt");
-Id="ColmenaresRCW120-U";
-Fuente="DIEG PUC";  
-Lv= 4520; % mm
+RawData=load("");
+Id="";
+Fuente="";  
+Lv=1; % mm
 Unidades=["mm"   "KN"];
 Comentarios=" ";
 %% Perfiles y parámetros opcionales  
@@ -341,7 +341,7 @@ end
 %% Perdida Rigidez
 % Calcula la rigidez de carga y descarga
 n=length(Ciclos);
-%Primeros Calculamos rigidez para n-1 Ciclos, y dispues calcualmos par
+%Primeros Calculamos rigidez para n-1 Ciclos, y despuescalcualmos par
 %ciclos finales(probablmente no completos)
 
 % Creamos vectores vacios
@@ -402,7 +402,7 @@ for i=1:n-1
     Ks1(i)=(y2-y2neg)/(x2-x2neg);
     Ks2(i)=(y3-y3neg)/(x3-x3neg);
 end  
-% Rigidez Ciclo final
+% Rigidez Ciclo final( Posiblemente incompleto)
  % Tipo 1
 if PartialCicleTolerance*maxf(end-1)<maxf(end) % decide si se considera rigidez de carga metodo 1
     x0=Ciclos{end}(1,1);
@@ -426,21 +426,20 @@ end
 % Tipo 3
 if length(find(~Ciclos{end}(:,2)) )>= 1 % decide si se considera rigidez de descarga metodo 1 y 2
     rig=find(~Ciclos{end}(:,2));
-    if isempty(rig)
-        if Ciclos{end}(end,2)>MidPointTolerance*maxdef(end)
-            x0=Ciclos{end}(end,1);
-            y0=Ciclos{end}(end,2);
-            Kd1(end)=(y1-y0)/(x1-x0);
-            y2=Ciclos{end}(maxdefI(end),2);
-            x2=maxdef(end);
-            Kd2(end)=(y2-y0)/(x2-x0);
-        end
-    else 
-        rig=rig(1);
-        x0=Ciclos{end}(rig,1);
-        y0=Ciclos{end}(rig,2);
-        x1=Ciclos{end}(maxfI(end),1);
-        y1=maxf(end);
+   
+    rig=rig(1);
+    x0=Ciclos{end}(rig,1);
+    y0=Ciclos{end}(rig,2);
+    x1=Ciclos{end}(maxfI(end),1);
+    y1=maxf(end);
+    Kd1(end)=(y1-y0)/(x1-x0);
+    y2=Ciclos{end}(maxdefI(end),2);
+    x2=maxdef(end);
+    Kd2(end)=(y2-y0)/(x2-x0);
+else        
+    if Ciclos{end}(end,1)>MidPointTolerance*maxdef(end)
+        x0=Ciclos{end}(end,1);
+        y0=Ciclos{end}(end,2);
         Kd1(end)=(y1-y0)/(x1-x0);
         y2=Ciclos{end}(maxdefI(end),2);
         x2=maxdef(end);
@@ -484,7 +483,7 @@ if PartialCicleTolerance*minf(end-1)>minf(end) % decide si se considera rigidez 
 end 
 
 % Tipo 5
-if PartialCicleTolerance*mindef(end-1)>mindef(end) % decide si se considera rigidez de carga metodo 2
+if PartialCicleTolerance*mindef(end-1)>mindef(end) % decide si se considera rigidez de carga metodo 
     rig=find(~Ciclos{end}(:,2));
     % Mismo cachamullo anterior de interpolacion de (f,0) en ciclo parcial final
     if isempty(rig)               % arrgla bug de fallo de interpolacion de (d,o) en ciclo parcial final
@@ -901,25 +900,13 @@ DataProcesada.Backbone=struct('BackBone',{BackBoneCopy},'BackBoneBilineal',{Back
 DataProcesada.Otros=struct('Outliers',{outlierindex},'PuntosNegInicial',{Neg_inicio},'CiclosMuyCortos',{Ciclos_eliminados},'Comentarios',{Comentarios}, 'OpcionesUsadas',{Opciones});
 %%  Validación Graficas 
 %OutliersGrafico(RawData,Data,outlierindex);
-%GraficarCiclos(Colmenares_RCW060D)
-GraficarHysteresis(DataProcesada,1)
-GraficarCiclos(DataProcesada)
-Resultados(DataProcesada)
+%GraficarCiclos(DataProcesada)
+% GraficarHysteresis(DataProcesada,1)
+% GraficarCiclos(DataProcesada)
+%Resultados(MoscosoRW3)
 % Eliminando variables intermedias
 clearvars -except DataProcesada
 
-
-
-% GraficarHysteresis(Dazio_WSH6   ,1)
-
-%Bugs actuales
-    % En ensayos de daño previo, compuestos exclusivamente por multiples
-    % ciclo a una deformación,(Colmenares), como el comportmiento es
-    % esencialemnte elástico, se ajusta una bilineal, donde el tramo
-    % elastico corresponde exclusivamente a los primeros dos puntos y el
-    % tramos de rigidización post fluencia  corresponde a al tramo
-    % elasticos verdadero
-     
 
 
  
