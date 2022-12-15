@@ -22,6 +22,7 @@ En esta investigación se realizó un recopilación bibliográfica de ensayos de
 ### Códigos de Matlab
  
  - `Analisis_Data_Experimental.m` : Script principal que detecta el protocolo de carga del ensayo y calcula la pérdida de fuerza, rígidez y energía disipada en cada                                       ciclo para la data experimental cargada. Tiene como output un struct
+ [![Video con explicación basica](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/MuPzLEvHQS0)
  - `GraficarCiclos.m`             : Función que a partir del struct calculado en `Analisis_Data_Experimental.m` grafica el protocolo de carga (supone que es a                                             deformación controlada) en términos de la deriva.
  - `GraficarHisteresis.m`         : Función que a partir del struct calculado en `Analisis_Data_Experimental.m` grafica el comportamiento histéretico del ensayo.
  - `Resultados.m`                 : Función que a partir del struct calculado en `Analisis_Data_Experimental.m` grafica los principales resultados de                                                   `Analisis_Data_Experimental.m`
